@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Comedy in the Age of Algorithims — Preferences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1 class="site-title" id="site-title"></h1>
+      <p class="site-tagline" id="site-tagline"></p>
+      <nav class="site-nav" id="site-nav" aria-label="Form sections"></nav>
+    </header>
+
+    <main>
+      <form id="preferences-form" class="form-grid" novalidate></form>
+
+      <section class="output-panel" id="output-panel" hidden>
+        <div class="output-header">
+          <h2>Your preferences as JSON</h2>
+          <button type="button" class="btn-copy" id="copy-json">Copy JSON</button>
+        </div>
+        <pre class="json-output" id="json-output"></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="palette-strip" id="palette-strip" aria-hidden="true"></div>
+    </footer>
+  </div>
+
+  <script type="application/json" id="site-config-data">
+    {
+      "title": "Curated Comedy in the Age of Algorithims",
+      "tagline": "Tell us how you scroll, laugh, and skip — we'll tune the feed.",
+      "navigation": {
+        "home": [
+          { "label": "GOAL", "href": "#goal", "color": "blueAtoll" },
+          { "label": "RESULTS", "href": "#results", "color": "brightMarigold" }
+        ],
+        "form": [
+          { "label": "HOME", "href": "index.html", "color": "blueAtoll" },
+          { "label": "GENRES", "href": "#genres", "color": "blueAtoll" },
+          { "label": "HABITS", "href": "#habits", "color": "cherryTomato" },
+          { "label": "DISCOVERY", "href": "#discovery", "color": "brightMarigold" },
+          { "label": "MOOD", "href": "#mood", "color": "sapGreen" },
+          { "label": "SUBMIT", "href": "#submit", "color": "cherryTomato" }
+        ]
+      },
+      "palette": {
+        "cloudDancer": { "name": "Cloud Dancer", "pantone": "11-4201 TCX", "hex": "#F0EEE9" },
+        "cherryTomato": { "name": "Cherry Tomato", "pantone": "17-1563 TCX", "hex": "#EB3C27" },
+        "blueAtoll": { "name": "Blue Atoll", "pantone": "16-4535 TCX", "hex": "#00B7C9" },
+        "sapGreen": { "name": "Sap Green", "pantone": "13-0331 TCX", "hex": "#AFCB8B" },
+        "brightMarigold": { "name": "Bright Marigold", "pantone": "15-1164 TCX", "hex": "#F8931F" }
+      }
+    }
+  </script>
+  <script src="js/form.js" type="module"></script>
+</body>
+</html>

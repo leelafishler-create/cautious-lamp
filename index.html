@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Comedy in the Age of Algorithims</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header site-header--home">
+      <h1 class="site-title" id="site-title"></h1>
+      <nav class="site-nav" id="site-nav" aria-label="Page sections"></nav>
+    </header>
+
+    <main>
+      <section class="home-intro" id="home-intro" aria-label="Project goal"></section>
+      <section class="home-cards" id="home-cards" aria-label="What you get"></section>
+      <section class="home-cta" id="home-cta" aria-label="Get started"></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="palette-strip" id="palette-strip" aria-hidden="true"></div>
+    </footer>
+  </div>
+
+  <script type="application/json" id="site-config-data">
+    {
+      "title": "Curated Comedy in the Age of Algorithims",
+      "tagline": "Tell us how you scroll, laugh, and skip — we'll tune the feed.",
+      "navigation": {
+        "home": [
+          { "label": "GOAL", "href": "#home-intro", "color": "blueAtoll" },
+          { "label": "RESULTS", "href": "#home-cards", "color": "brightMarigold" }
+        ],
+        "form": [
+          { "label": "HOME", "href": "index.html", "color": "blueAtoll" },
+          { "label": "GENRES", "href": "#genres", "color": "blueAtoll" },
+          { "label": "HABITS", "href": "#habits", "color": "cherryTomato" },
+          { "label": "DISCOVERY", "href": "#discovery", "color": "brightMarigold" },
+          { "label": "MOOD", "href": "#mood", "color": "sapGreen" },
+          { "label": "SUBMIT", "href": "#submit", "color": "cherryTomato" }
+        ]
+      },
+      "cta": {
+        "label": "Share your reel preferences",
+        "href": "form.html",
+        "accent": "cherryTomato"
+      },
+      "home": {
+        "intro": {
+          "id": "home-intro",
+          "label": "The goal",
+          "heading": "Reclaim comedy discovery from the endless scroll",
+          "subheading": "Curated Comedy maps how you actually watch reels — your genres, habits, and taste — so human curation can compete with the algorithm on your terms."
+        },
+        "cards": [
+          {
+            "id": "habits",
+            "title": "Reel habits",
+            "description": "How often you watch, preferred length, and what you do when a clip doesn't hook you.",
+            "accent": "blueAtoll",
+            "pattern": "hex",
+            "icon": "play"
+          },
+          {
+            "id": "taste",
+            "title": "Humor taste",
+            "description": "Genres and styles that make you laugh — from stand-up clips to absurdist chaos.",
+            "accent": "brightMarigold",
+            "pattern": "grid",
+            "icon": "smile"
+          },
+          {
+            "id": "discovery",
+            "title": "Discovery",
+            "description": "Where you find comedy and how much you trust the algorithm to get it right.",
+            "accent": "cherryTomato",
+            "pattern": "stars",
+            "icon": "compass"
+          },
+          {
+            "id": "profile",
+            "title": "Your profile",
+            "description": "A private JSON snapshot of your preferences — portable, structured, never shared.",
+            "accent": "sapGreen",
+            "pattern": "waves",
+            "icon": "shield"
+          }
+        ]
+      },
+      "palette": {
+        "cloudDancer": { "name": "Cloud Dancer", "pantone": "11-4201 TCX", "hex": "#F0EEE9" },
+        "cherryTomato": { "name": "Cherry Tomato", "pantone": "17-1563 TCX", "hex": "#EB3C27" },
+        "blueAtoll": { "name": "Blue Atoll", "pantone": "16-4535 TCX", "hex": "#00B7C9" },
+        "sapGreen": { "name": "Sap Green", "pantone": "13-0331 TCX", "hex": "#AFCB8B" },
+        "brightMarigold": { "name": "Bright Marigold", "pantone": "15-1164 TCX", "hex": "#F8931F" }
+      },
+      "layout": { "columns": 4, "style": "editorial-grid" }
+    }
+  </script>
+  <script src="js/home.js" type="module"></script>
+</body>
+</html>
